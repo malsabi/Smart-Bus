@@ -58,6 +58,5 @@ class HuskyDriver:
         try:
             data = self.__husky_lens.learnedBlocks()
             return json.dumps(data.__dict__)
-        except Exception as ex:
-            print(ex.__str__())
+        except:
             return None
